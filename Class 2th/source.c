@@ -7,7 +7,7 @@ void main()
 	char -> 한 문자를 저장할 수 있는 자료형
 	 int -> 정수를 저장할 수 있는 자료형
 	float -> 실수를 저장할 수 있는 자료형
-	*/ 
+	*/
 #pragma region 자료형
 	/*
 	데이터를 저장하기 위해 데이터의 형태를 정해주는 것입니다.
@@ -17,36 +17,36 @@ void main()
 	*/
 #pragma endregion
 
-//char alphabet='A'; // -128~127
-//int data=100;
-//float decimal = 3.75f;
-//
-///*
-//"%c" : 한 문자를 표현하는 서식 지정자
-//"%d" : 정수를 표현하는 서식 지정자
-//"%f" : 실수를 표현하는 서식 지정자
-//*/
-//alphabet = 'B';
-//data = 999;
-// decimal = 5.75f;
-//
-//printf("%c\n", alphabet);
-//printf("%d\n", data);
-//printf("%f", decimal);
+	//char alphabet='A'; // -128~127
+	//int data=100;
+	//float decimal = 3.75f;
+	//
+	///*
+	//"%c" : 한 문자를 표현하는 서식 지정자
+	//"%d" : 정수를 표현하는 서식 지정자
+	//"%f" : 실수를 표현하는 서식 지정자
+	//*/
+	//alphabet = 'B';
+	//data = 999;
+	// decimal = 5.75f;
+	//
+	//printf("%c\n", alphabet);
+	//printf("%d\n", data);
+	//printf("%f", decimal);
 
-	/*
-	변수의 메모리 공간은 프로그램이 실행될 때마다
-	바뀌며, 여러 개의 변수가 있을 때 서로 고유의 메모리 공간을 가지고 있습니다.
-	*/
+		/*
+		변수의 메모리 공간은 프로그램이 실행될 때마다
+		바뀌며, 여러 개의 변수가 있을 때 서로 고유의 메모리 공간을 가지고 있습니다.
+		*/
 #pragma endregion
 #pragma region 상수
-	/*
-	프로그램이 실행되는 동안 더 이상 변경할 수 없는
-	메모리 공간입니다.
-	상수는 메모리 공간을 생성하는 동시에 초기화해야 하며,
-	한 번 저장된 값은 더 이상 변경할 수 없습니다.
-	*/
-	
+		/*
+		프로그램이 실행되는 동안 더 이상 변경할 수 없는
+		메모리 공간입니다.
+		상수는 메모리 공간을 생성하는 동시에 초기화해야 하며,
+		한 번 저장된 값은 더 이상 변경할 수 없습니다.
+		*/
+
 	const float pi = 3.14f;
 	const float hi = 13.2f;
 	/*
@@ -74,7 +74,7 @@ void main()
 	result4 = 13.2f / pi;
 	result5 = d % c;
 
-	printf("%f\n%f\n%f\n%f\n%d",result1, result2, result3, result4, result5);
+	printf("%f\n%f\n%f\n%f\n%d", result1, result2, result3, result4, result5);
 #pragma endregion
 
 }
