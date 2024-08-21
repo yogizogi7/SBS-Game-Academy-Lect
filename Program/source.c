@@ -2,77 +2,57 @@
 
 void main()
 {
-#pragma region 반복문
+#pragma region 상수 지시 포인터
 
-	// 프로그램 내에서 특정한 작업을 반복적으로 수행하는 명령문
+	//상수로 선언한 포인터는 해당 변수의 값을 변경할 수 없지만
+	//다른 변수의 주소는 가리킬 수 있습니다.
 
-
+	//	int a = 10;
+	//	int b = 20;
+	//	const int* ptr = NULL;
+	//	ptr = &a;
+	//	printf("%d\n", *ptr);
+	//	ptr = &b;
+	//	printf("%d\n",*ptr);
 #pragma endregion
-#pragma region 증감연산자
-	// 전위 증감 후위증가
-	//	int x = 0;
-	//	int result = ++x;
-	//	printf(" % d\n", result);
-	//	int result = --x;
-	//	printf(" % d\n", result);
-	//	int result = x++;
-	//	printf(" % d\n", result);
-	//	int result = x--;
-	//	printf(" % d\n", result);
+#pragma region 포인터 상수
+	//포인터를 상수로 선언하여 포인터 변수가 가리키고 있는 주소에
+	//존재하는 값을 변경할 수 없도록 설정할 수 있습니다.
+	//	int x = 10, y = 20;
+	//	int* const cptr = &x;
+	//	*cptr = 99;
+	//	printf("%d\n",x);
 #pragma endregion
-#pragma region for문
-	//초기식 연산하여 조건식의 결과에 따라 특정한 횟수만큼 반복하는 반복문
-
-	//	for (int i = 0;i < 10;i++) {
-	//		printf("Hello World %d\n",i+1);
+#pragma region 배열
+	//같은 자료형의 변수들로 이루어진 유한 집합입니다.
+	//	int array[5];
+	//	printf("%d\n",sizeof(array));
+	//	//배열의 경우 첫 번째 원소는 0부터 시작
+	//	int size = sizeof(array)/4;
+	//	printf("%d\n", size);
+	//	//배열은 원하는 원소에 원하는 값을 저장할 수 있으며, 
+	//	//배열의 크기는 컴파일이 되는 시점부터 고정된 메모리 공간을 가지게 됩니다.
+	//	for (int i = 0;i < size;i++) {
+	//		array[i] = (i + 1) * 10;
+	//		printf("%d\n", array[i]);
 	//	}
-#pragma endregion
-#pragma region (1)부터 n까지의  합
+	//	
+	//int list[] = {1,2,3,4,5};
+	//for (int i = 0;i < sizeof(list)/4;i++) {
+	//			list[i] = (i + 1) * 10;
+	//			printf("%d\n", list[i]);
+	//		}
+	//배열의 크기는 생략할수 있으며 초기화 목록에서 설정한 요소에 따라 배열의 크기가 결정됩니다.
 
-	//		int sum = 0;
-	//		int n = 10;
-	//		for (int i = 1;i < n + 1;i++) {
-	//			sum += i;
-	//		}
-	//		printf("%d\n", sum);
-#pragma endregion
-#pragma region while문
-	//특정 조건을 만족할 때까지 주어진 명령문을 실행하는 반복문
-
-	//		int count = 5;
-	//		while (count > 0) {
-	//			printf("Game Start\n");
-	//			count--;
-	//		}
-#pragma endregion
-#pragma region do-while
-
-	//조건과 상관없이 한번 작업 수행하고 조건에 따라 명령문 실행
-#pragma endregion
-#pragma region continue문
-
-	//해당 조건문만 실행하지 않고, 반복문은 이어서 실행하는 제어문
-	//		for (int i = 0;i <= 5;i++) {
-	//			if (i % 2 == 0) {
-	//				continue;
-	//			}
-	//			printf("%d\n",i);
-	//		}
-#pragma endregion
-#pragma region (2)중 for문
-	//	for (int i = 0;i < 3;i++) {
-	//		for (int j = 0;j < 3;j++){
-	//			printf("★");
-	//		}
-	//		printf("☆\n");
-	//	}
-#pragma endregion
-#pragma region 구구단
-	//	for (int i = 1;i < 10;i++) {
-	//		for (int j = 1;j < 10;j++) {
-	//			printf("%d * %d = %d\n", i, j, i * j);
-	//		}
-	//	}
+	//	int table[] = {1,2,3};
+	//	printf("%p\n", table);
+	//	printf("%p\n", &table[0]);
+	//	int* p = NULL;
+	//	p = &table;
+	//	p = p + 1;//int라서 4만큼 증가
+	//	*p = 135;
+	//	printf("%d\n", table[1]);
+	//배열은 연속적인 메모리 공간을 가지며 배열의 이름은 배열의 시작 주소를 가리킵니다.
 #pragma endregion
 
 }
