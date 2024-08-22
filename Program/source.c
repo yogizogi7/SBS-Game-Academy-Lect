@@ -2,57 +2,56 @@
 
 void main()
 {
-#pragma region 상수 지시 포인터
-
-	//상수로 선언한 포인터는 해당 변수의 값을 변경할 수 없지만
-	//다른 변수의 주소는 가리킬 수 있습니다.
-
-	//	int a = 10;
-	//	int b = 20;
-	//	const int* ptr = NULL;
-	//	ptr = &a;
-	//	printf("%d\n", *ptr);
-	//	ptr = &b;
-	//	printf("%d\n",*ptr);
+#pragma region 문자열
+	//연속적인 메모리 공간에 저장된 문자 변수의 집합입니다.
+	//문자열의 경우 포인터를 이용하여 문자열 상수를 가리키도록 할 수 있으며,
+	//문자열 상수는 데이터 영역의 읽기 전용 공간에 저장되기 때문에 문자열의 값을 변경할 수 없습니다.
+	//	const char* string = "alistar";
+	//	char content[10] = { 0, };
+	//	content[0] = 'p';
+	//	//문자열은 공백도 함께 메모리 공간에 포함하여 크기가 결정되며, 마지막에 문자열의 끝을 알려주는 제어 문자가 추가됩니다.
+	//	//문자열의 경우 서로 연속적인 메모리 공간으로 연결되어 있지만. 문자 배열 사이에 무효의 문자를 넣게 되면 무효의 문자까지만 문자열을 출력합니다.
+	//	string = "janna";
+	//	string = "Tower\0Defense";
 #pragma endregion
-#pragma region 포인터 상수
-	//포인터를 상수로 선언하여 포인터 변수가 가리키고 있는 주소에
-	//존재하는 값을 변경할 수 없도록 설정할 수 있습니다.
-	//	int x = 10, y = 20;
-	//	int* const cptr = &x;
-	//	*cptr = 99;
-	//	printf("%d\n",x);
+#pragma region 범용 포인터
+	//자료형이 정해지지 않은 상태로 모든 자료형을 저장할 수 있는 포인터
+	//범용포인터는 메모리 주소에 접근해서 값을 변경할 수 없습니다.
+	//	char grade = 'a';
+	//	float attck = 32.5f;
+	//	int health = 100;
+	//	double defense = 3.3;
+	//	void* vptr = NULL;
+	//		vptr = &grade;
+	//		*(char*) vptr = 'T';
+	//		vptr = &defense;
+	//		*(double*)vptr = 30;
+	//		printf("%c\n",grade);
+		//범용포인터로 변수의 메모리에 접근하려면 범용 포인터가 가리키는 변수의 자료형으로 형 변환 해주어야합니다.
 #pragma endregion
-#pragma region 배열
-	//같은 자료형의 변수들로 이루어진 유한 집합입니다.
-	//	int array[5];
-	//	printf("%d\n",sizeof(array));
-	//	//배열의 경우 첫 번째 원소는 0부터 시작
-	//	int size = sizeof(array)/4;
-	//	printf("%d\n", size);
-	//	//배열은 원하는 원소에 원하는 값을 저장할 수 있으며, 
-	//	//배열의 크기는 컴파일이 되는 시점부터 고정된 메모리 공간을 가지게 됩니다.
-	//	for (int i = 0;i < size;i++) {
-	//		array[i] = (i + 1) * 10;
-	//		printf("%d\n", array[i]);
-	//	}
-	//	
-	//int list[] = {1,2,3,4,5};
-	//for (int i = 0;i < sizeof(list)/4;i++) {
-	//			list[i] = (i + 1) * 10;
-	//			printf("%d\n", list[i]);
-	//		}
-	//배열의 크기는 생략할수 있으며 초기화 목록에서 설정한 요소에 따라 배열의 크기가 결정됩니다.
+#pragma region 펠린드롬
+	//0 4, 1 3, 2
+	char x[] = { "abccba" };
+	int size = (sizeof(x) / sizeof(char)) - 1;
+	int flag = 1;
+		printf("%d\n", size);
 
-	//	int table[] = {1,2,3};
-	//	printf("%p\n", table);
-	//	printf("%p\n", &table[0]);
-	//	int* p = NULL;
-	//	p = &table;
-	//	p = p + 1;//int라서 4만큼 증가
-	//	*p = 135;
-	//	printf("%d\n", table[1]);
-	//배열은 연속적인 메모리 공간을 가지며 배열의 이름은 배열의 시작 주소를 가리킵니다.
+	for (int i = 0;i < (size / 2);i++) {
+		if (i == size - 1 - i) {
+			flag = 0;
+			break;
+		}
+
+
+	}
+	if (flag == 1) {
+		printf("회문입니다.\n");
+	}
+	else {
+		printf("회문이 아닙니다.\n");
+	}
+
 #pragma endregion
+
 
 }

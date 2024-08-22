@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 5th(Conditional state
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 6th(repeat statement)", "..\Class 6th(repeat statement)\Class 6th(repeat statement).vcxproj", "{28EBBBF8-42DD-4536-BBB9-54D761F2A6CA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 7th(bayel)", "..\Class 7th(bayel)\Class 7th(bayel).vcxproj", "{E1B3A1A0-ED7A-4C6D-8660-70618597927C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{28EBBBF8-42DD-4536-BBB9-54D761F2A6CA}.Release|x64.Build.0 = Release|x64
 		{28EBBBF8-42DD-4536-BBB9-54D761F2A6CA}.Release|x86.ActiveCfg = Release|Win32
 		{28EBBBF8-42DD-4536-BBB9-54D761F2A6CA}.Release|x86.Build.0 = Release|Win32
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Debug|x64.ActiveCfg = Debug|x64
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Debug|x64.Build.0 = Debug|x64
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Debug|x86.Build.0 = Debug|Win32
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Release|x64.ActiveCfg = Release|x64
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Release|x64.Build.0 = Release|x64
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Release|x86.ActiveCfg = Release|Win32
+		{E1B3A1A0-ED7A-4C6D-8660-70618597927C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
