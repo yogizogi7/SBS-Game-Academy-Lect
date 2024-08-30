@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 13th(Dynamic Allocati
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 14th(struct)", "..\Class 14th(struct)\Class 14th(struct).vcxproj", "{3C7F511C-7A9A-470C-A377-AFC4BAF6697C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class15th(byte padding)", "..\Class15th(byte padding)\Class15th(byte padding).vcxproj", "{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{3C7F511C-7A9A-470C-A377-AFC4BAF6697C}.Release|x64.Build.0 = Release|x64
 		{3C7F511C-7A9A-470C-A377-AFC4BAF6697C}.Release|x86.ActiveCfg = Release|Win32
 		{3C7F511C-7A9A-470C-A377-AFC4BAF6697C}.Release|x86.Build.0 = Release|Win32
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Debug|x64.ActiveCfg = Debug|x64
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Debug|x64.Build.0 = Debug|x64
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Debug|x86.ActiveCfg = Debug|Win32
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Debug|x86.Build.0 = Debug|Win32
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Release|x64.ActiveCfg = Release|x64
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Release|x64.Build.0 = Release|x64
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Release|x86.ActiveCfg = Release|Win32
+		{678AB21F-FEEB-40CB-B8FC-A95711A50F7C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
